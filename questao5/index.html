@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <header>
+            <h1>freeCodeCamp Survey Form</h1>
+            <p>Thank you for taking the time to help us improve the platform</p>
+        </header>
+
+        <section class="forms">
+            <form action="#">
+                <div class="primary-fields">
+                    <label for="iname">Name</label>
+                    <input type="text" name="name" id="iname" placeholder="Enter your name">
+                    <label for="iemail">Email</label>
+                    <input type="email" name="email" id="iemail" placeholder="Enter your Email">
+                    <label for="iage">Age <small>(optional)</small></label>
+                    <input type="number" name="age" id="iage" placeholder="Age">
+                    <label for="iselect-current-role">Which option best describes your current role?</label>
+                    <select name="select-current-role" id="iselect-current-role" required>
+                        <option selected disabled>Select current role</option>
+                        <option>Student</option>
+                        <option>Full Time Job</option>
+                        <option>Full Time Learner</option>
+                        <option>Prefer not to say</option>
+                        <option>Other</option>
+                    </select>
+                </div>
+
+                <div class="recomendation">
+                    <p>Would you recommend freeCodeCamp to a friend?</p>
+                    <label><input type="radio" name="recommend" id="idefinitely" checked>
+                    &nbsp;Definitely</label>
+                    <label><input type="radio" name="recommend" id="imaybe">
+                    &nbsp;Maybe</label>
+                    <label><input type="radio" name="recommend" id="inot-sure">
+                    &nbsp;Not sure</label>
+                </div>
+
+                <div class="favorite-feature">
+                    <label for="ifavorite-feature-name">What is your favorite feature of freeCodeCamp?</label>
+                    <select name="favorite-feature-name" id="ifavorite-feature-name" required>
+                        <option selected disabled>Select an option</option>
+                        <option>Challenges</option>
+                        <option>Projects</option>
+                        <option>Community</option>
+                        <option>Open Source</option>
+                    </select>
+                </div>
+                
+                <div class="improved">
+                    <p>What would you like to see improved?<br>&nbsp;<small>(Check all that apply)</small></p>
+                    <label><input type="checkbox" name="stacks-improved" id="ifront-end-projects">
+                        &nbsp;Front-end Projects</label>
+                    <label><input type="checkbox" name="stacks-improved" id="iback-end-projects">
+                        &nbsp;Back-end Projects</label>
+                    <label><input type="checkbox" name="stacks-improved" id="idata-visualization">
+                        &nbsp;Data Visualization</label>
+                    <label><input type="checkbox" name="stacks-improved" id="ichallenges">
+                        &nbsp;Challenges</label>
+                    <label><input type="checkbox" name="stacks-improved" id="iopen-source-community">
+                        &nbsp;Open Source Community</label>
+                    <label><input type="checkbox" name="stacks-improved" id="igitter-help-rooms">
+                        &nbsp;Gitter help rooms</label>
+                    <label><input type="checkbox" name="stacks-improved" id="ivideos">
+                        &nbsp;Videos</label>
+                    <label><input type="checkbox" name="stacks-improved" id="icity-meetups">
+                        &nbsp;City Meetups</label>
+                    <label><input type="checkbox" name="stacks-improved" id="iwiki">
+                        &nbsp;Wiki</label>
+                    <label><input type="checkbox" name="stacks-improved" id="iforum">
+                        &nbsp;Forum</label>
+                    <label><input type="checkbox" name="stacks-improved" id="iadditional-courses">
+                        &nbsp;Additional Courses</label>
+                </div>
+                
+                <div class="comments">
+                    <p>Any comments or suggestions?</p>
+                    <textarea name="comments-name" id="comments-textarea" placeholder="Enter your comment here..."></textarea>
+                </div>
+
+                <div class="submit">
+                    <button>Submit</button>
+                </div>
+            </form>
+        </section>
+    </main>
+</body>
+</html>

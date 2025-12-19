@@ -1,0 +1,206 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    position: fixed;
+    top: 0; left: 0;
+    padding-bottom: 10px;
+    width: 100%;
+    border-bottom: 1px solid black;
+    background-image: linear-gradient(to bottom, lightgray, white 40% 100%);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header .title-header {
+    width: 300px;
+}
+.title-header img {
+    width: 100%;
+}
+
+header nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+nav a {
+    padding: 5px 10px;
+    text-decoration: none;
+    background-color: lightgray;
+    color: black;
+}
+
+@media (min-width: 800px) {
+    header {
+        padding: 10px;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    header nav {
+        flex-direction: row;
+    }
+}
+
+/* -------------------------------------------------- */
+#search {
+    margin: 178px 0 50px;
+    padding: 10px 0;
+}
+
+#search form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+
+form h1 {
+    font-size: clamp(1.7rem,5vw,40px);
+}
+form input {
+    padding: 5px 7px;
+    width: clamp(220px,50vw,385px);
+}
+form button {
+    padding: 7px 12px;
+    background-color: rgb(255, 217, 0);
+    color: black;
+    font-weight: bold;
+    font-size: 1.1rem;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: orange;
+    transition: 1s;
+}
+
+/* -------------------------------------------------- */
+#informations {
+    padding: 0 20px;
+    margin-bottom: 50px;
+    text-align: center;
+
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+.information-block {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.information-block-icon i {
+    display: none;
+    font-size: 3rem;
+    color: orange;
+}
+
+.information-block-text {
+    display: flex;
+    flex-direction: column;
+}
+
+@media (min-width: 550px) {
+    #informations {
+        margin: auto;
+        text-align: start;
+        max-width: 725px;
+    }
+    .information-block-icon i {
+        display: block;
+    }
+}
+
+/* -------------------------------------------------- */
+#media-youtube {
+    margin: 50px auto 0;
+    width: 100%;
+    max-width: 700px;
+}
+#media-youtube iframe {
+    width: 100%;
+}
+
+/* -------------------------------------------------- */
+#box-cards {
+    margin: 50px 0;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+#box-cards .card {
+    padding-bottom: 10px;
+    text-align: center;
+    border: 1px solid black;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+}
+.title-card h2 {
+    font-size: 1.2rem;
+}
+.title-card {
+    padding: 10px 50px;
+    background-color: lightgray;
+}
+.card .price {
+    font-size: 1.7rem;
+    font-weight: bold;
+}
+.lorem {
+    line-height: 30px;
+}
+#box-cards button {
+    width: 100px;
+    height: 40px;
+
+    background-color: rgb(255, 217, 0);
+    border: none;
+    cursor: pointer;
+}
+
+@media (min-width: 950px) {
+    #box-cards {
+        flex-direction: row;
+        justify-content: center;
+    }
+}
+/* -------------------------------------------------- */
+footer {
+    padding: 10px 20px;
+    background-color: lightgray;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 5px;
+}
+.links-footer {
+    display: flex;
+    gap: 20px;
+}
+.links-footer h3 {
+    font-weight: normal;
+}
+.links-footer a {
+    text-decoration: none;
+    color: black;
+}
+p {
+    color: rgb(56, 54, 54);
+}

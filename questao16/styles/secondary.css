@@ -1,0 +1,38 @@
+#secondary {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.images-media {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+#secondary h2, #secondary h3 {
+    color: rgba(3, 190, 207, .75);
+}
+#secondary p {
+    font-size: 1rem;
+    color: rgba(194, 184, 184, .9);
+}
+.container-topic {
+    margin: 15px 0 25px;
+}
+.image {
+    width: 100%;
+}
+.image img {
+    width: 100%;
+}
+
+@media (min-width: 1000px) {
+    #secondary {
+        flex-direction: row;
+    }
+    .images-media { 
+        width: 50%;
+    }
+    .history {
+        width: 50%;
+    }
+}

@@ -1,0 +1,123 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+header {
+    padding: 10px;
+    background-color: #131342;
+    color: white;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+}
+
+header > p {
+    flex: 0 0 174px;
+    font-size: 1.2rem;
+    background-color: #0A0A23;
+}
+
+header > h1 {
+    text-align: center;
+    font-size: clamp(1.3rem, 4vw,30px);
+    color: rgb(255, 213, 28);
+}
+.navegator {
+    flex: 0 0 150px;
+    display: flex;
+    justify-content: space-evenly;
+    gap: 5px;
+}
+.navegator > div {
+    padding: 2px;
+    cursor: pointer;
+}
+.navegator > div:hover {
+    background-color: rgb(255, 246, 246);
+    color: #131342;
+}
+
+/* ------------------------------------------------ */
+
+main {
+    margin: 100px auto 40px;
+    padding: 10px;
+    width: clamp(350px, 70vw, 600px);
+}
+
+.formulario1 {
+    padding: 40px 10px 75px;
+    display: grid;
+    grid-template-columns: 75px auto;
+    align-items: center;
+    gap: 15px 4px;
+}
+
+.formulario1 input {
+    width: clamp(170px,35vw,300px);
+    height: 30px;
+}
+
+.formulario2 {
+    padding: 30px 10px;
+}
+.question {
+    padding-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.answer {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.formulario3 {
+    padding: 30px 10px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.formulario3 textarea {
+    padding: 5px;
+    width: clamp(200px,45vw,350px);
+    height: 100px;
+}
+
+.button {
+    display: flex;
+    justify-content: center;
+}
+.button > button {
+    width: calc(100% - 20px);
+    padding: 15px 0;
+    background-color: rgb(202, 202, 202);
+    font-size: 1.2rem;
+    border: 2px solid #131342;
+    cursor: pointer;
+}
+
+footer {
+    padding: 5px;
+    background-color: #131342;
+    color: white;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+footer > a {
+    color: white;
+}

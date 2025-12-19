@@ -1,0 +1,32 @@
+.facebook:hover {
+    transform: translateY(-5px);
+    color: #1877F2;
+    transition: 0.2s;
+}
+.twitter:hover {
+    transform: translateY(-5px);
+    color: #1DA1F2;
+    transition: 0.2s;
+}
+.instagram:hover {
+    transform: translateY(-5px);
+    background-image: linear-gradient(
+        45deg,
+        #feda75,
+        #fa7e1e,
+        #d62976,
+        #962fbf,
+        #4f5bd5
+    );
+    transition: 0.2s;
+}
+.linkedin:hover {
+    transform: translateY(-5px);
+    color: #0A66C2;
+    transition: 0.2s;
+}
+.youtube:hover {
+    transform: translateY(-5px);
+    color: #FF0000;
+    transition: 0.2s;
+}

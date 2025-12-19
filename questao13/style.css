@@ -1,0 +1,96 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+main {
+    margin: 150px auto;
+    padding: 25px;
+    background-color: rgb(13, 80, 13);
+    width: 400px;
+    height: 350px;
+    border-radius: 20px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+
+main h1 {
+    color: white;
+}
+
+.piano {
+    align-self: center;
+    display: flex;
+}
+
+.oitavas-1 {
+    width: 350px;
+    height: 200px;
+    background-color: white;
+    border: 1px solid black;
+
+    display: flex;
+}
+
+.oitavas-2 {
+    width: 350px;
+    height: 200px;
+    background-color: white;
+    border: 1px solid black;
+
+    display: none;
+}
+
+@media (min-width: 1000px) {
+    main {
+        width: 800px;
+    }
+
+    .oitavas-1 {
+        transform: translateX(1px);
+    }
+    .oitavas-2 {
+        display: flex;
+        transform: translateX(-1px);
+    }
+}
+
+.no-yes {
+    position: relative;
+    flex: 1;
+    border: 2px solid black;
+}
+.yes-yes {
+    position: relative;
+    flex: 1;
+    border: 2px solid black;
+}
+.yes-no {
+    position: relative;
+    flex: 1;
+    border: 2px solid black;
+}
+
+.black-right {
+    position: absolute;
+    top: 0; right: -2px;
+    background-color: rgb(37, 37, 37);
+    width: 17px;
+    height: 110px;
+    border-right: 2px solid rgb(37, 37, 37);
+    border-radius: 0 0 0 5px;
+}
+
+.black-left {
+    position: absolute;
+    top: 0; left: -2px;
+    background-color: rgb(37, 37, 37);
+    width: 17px;
+    height: 110px;
+    border-left: 2px solid rgb(37, 37, 37);
+    border-radius: 0 0 5px 0;
+}

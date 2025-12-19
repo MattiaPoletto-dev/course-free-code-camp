@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wheeler Ferris</title>
+    <style>
+        body {
+            background-color: lightblue;
+        }
+        main {
+            position: relative;
+            margin: 50px auto;
+            width: 400px;
+            height: 400px;
+
+            background: conic-gradient(
+                red 0deg 1deg,
+                lightblue 1deg 60deg,
+                red 60deg 61deg,
+                lightblue 61deg 120deg,
+                red 120deg 121deg,
+                lightblue 121deg 180deg,
+                red 180deg 181deg,
+                lightblue 181deg 240deg,
+                red 240deg 241deg,
+                lightblue 241deg 300deg,
+                red 300deg 301deg,
+                lightblue 301deg 360deg
+            );
+            
+            border: 10px solid white;
+            border-radius: 50%;
+            animation: roda-roda 15s linear infinite 3s;
+        }
+        .center {
+            position: absolute;
+            top: 50%; left: 50%;
+            transform: translate(-50%, -50%);
+            width: 80px; height: 80px;
+            background: radial-gradient(circle, white 0 20%, lightblue 20% 30%, white 30% 50%, lightblue 50% 60%, white 60% 80%, lightblue 80% 95%, white 95% 100%);
+
+            border-radius: 50%;
+        }
+
+        /* -------------------------------------- */
+        .screw {
+            position: absolute;
+            top: 50%; left: 50%;
+            transform: translate(-50%, -50%);
+            width: 10px; height: 10px;
+            background-color: black;
+            
+            border-radius: 50%;
+        }
+        .top {
+            width: 5px; height: 5px;
+            top: 23%;
+        }
+
+        .right {
+            width: 5px; height: 5px;
+            left: 77%;
+        }
+        .bottom {
+            width: 5px; height: 5px;
+            top: 77%;
+        }
+
+        .left {
+            width: 5px; height: 5px;
+            left: 23%;
+        }
+        /* -------------------------------------- */
+        .chair1 {
+            position: absolute;
+            top: 75px; left: -20px;
+            width: 80px; height: 40px;
+            background-color: green;
+
+            clip-path: polygon(
+                0 0, 100% 0, 80% 100%, 20% 100%
+            );
+            animation: rotate-reverse 15s linear infinite 3s;
+        }
+        .chair2 {
+            position: absolute;
+            top: -25px; left: 160px;
+            width: 80px; height: 40px;
+            background-color: yellow;
+
+            clip-path: polygon(
+                0 0, 100% 0, 80% 100%, 20% 100%
+            );
+            animation: rotate-reverse 15s linear infinite 3s;
+        }
+        .chair3 {
+            position: absolute;
+            top: 75px; left: 340px;
+            width: 80px; height: 40px;
+            background-color: orange;
+
+            clip-path: polygon(
+                0 0, 100% 0, 80% 100%, 20% 100%
+            );
+            animation: rotate-reverse 15s linear infinite 3s;
+
+        }
+        .chair4 {
+            position: absolute;
+            top: 275px; left: 340px;
+            width: 80px; height: 40px;
+            background-color: red;
+
+            clip-path: polygon(
+                0 0, 100% 0, 80% 100%, 20% 100%
+            );
+            animation: rotate-reverse 15s linear infinite 3s;
+
+        }
+        .chair5 {
+            position: absolute;
+            top: 275px; left: -20px;
+            width: 80px; height: 40px;
+            background-color: blue;
+
+            clip-path: polygon(
+                0 0, 100% 0, 80% 100%, 20% 100%
+            );
+            animation: rotate-reverse 15s linear infinite 3s;
+
+        }
+        .chair6 {
+            position: absolute;
+            top: 375px; left: 160px;
+            width: 80px; height: 40px;
+            background-color: purple;
+
+            clip-path: polygon(
+                0 0, 100% 0, 80% 100%, 20% 100%
+            );
+            animation: rotate-reverse 15s linear infinite 3s;
+
+        }
+
+        /* -------------------------------------- */
+        @keyframes roda-roda {
+            from {
+                transform: rotate(0);
+            }
+            to {
+                transform: rotate(360deg);
+            }
+        }
+        @keyframes rotate-reverse {
+            from {
+                transform: rotate(0);
+            }
+            to {
+                transform: rotate(-360deg);
+            }
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <div class="center">
+            <div class="screw"></div>
+            <div class="screw top"></div>
+            <div class="screw right"></div>
+            <div class="screw bottom"></div>
+            <div class="screw left"></div>
+        </div>
+        <div class="chair1"></div>
+        <div class="chair2"></div>
+        <div class="chair3"></div>
+        <div class="chair4"></div>
+        <div class="chair5"></div>
+        <div class="chair6"></div>
+    </main>
+</body>
+</html>

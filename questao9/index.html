@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <p>freeCodeCamp(A)</p>
+        <h1>HTML/CSS Quiz</h1>
+        <div class="navegator">
+            <div>INFO</div>
+            <div>HTML</div>
+            <div>CSS</div>
+        </div>
+    </header>
+    <main>
+        <h2>Student Info</h2>
+        <hr>
+        <form action="#">
+            <div class="formulario1">
+                <label>Name:</label>
+                <input type="text" name="name" id="iname">
+                <label>Email:</label>
+                <input type="email" name="email" id="iemail">
+                <label>Date of Birth:</label>
+                <input type="date" name="Birth" id="ibirth">
+            </div>
+            <h2>HTML</h2>
+            <hr>
+            <div class="formulario2">
+                <div class="question">
+                    <h3>Question #1</h3>
+                    <p>The legend element represents a caption for the content of its parent fieldset element</p>
+                    <div class="answer">
+                        <label>
+                            <input type="radio" name="answer" id="iq1t">
+                            True
+                        </label>
+                        <label>
+                            <input type="radio" name="answer" id="iq1f">
+                            False
+                        </label>
+                    </div>
+                </div>
+                <div class="question">
+                    <h3>Question #2</h3>
+                    <p>A label element nesting an input element is required to have a for attribute with the same value as the input's id</p>
+                    <div class="answer">
+                        <label>
+                            <input type="radio" name="answer" id="iq1t">
+                            True
+                        </label>
+                        <label>
+                            <input type="radio" name="answer" id="iq2f">
+                            False
+                        </label>
+                    </div>
+                </div>
+            </div>
+            <h2>CSS</h2>
+            <hr>
+            <div class="formulario3">
+                <div class="qt1">
+                    <label for="iselect-option">Can the CSS margin property accept negavite values?</label>
+                    <br>
+                    <select name="select-option" id="iselect-option" required>
+                        <option value="#" selected disabled>Select an option</option>
+                        <option value="#">Yes</option>
+                        <option value="#">No</option>
+                    </select>
+                </div>
+                <div class="qt2">
+                    <label for="any-questions">Do you have any questions:</label>
+                    <br>
+                    <textarea name="any-questions" id="iany-questions"></textarea>
+                </div>
+            </div>
+            <div class="button">
+                <button>Send</button>
+            </div>
+        </form>
+    </main>
+    <footer>
+        <a href="https://www.freecodecamp.org/">freeCodeCamp</a>
+        <p>San Francisco</p>
+        <p>California</p>
+        <p>USA</p>
+    </footer>
+</body>
+</html>

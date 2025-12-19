@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Registration</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <header>
+            <h1>Registration Form</h1>
+            <p>Please fill out this form with the required information</p>
+        </header>
+        <section>
+            <form action="#" method="post">
+                <div class="informations">
+                    <label for="ifirstname">Enter Your First Name:</label>
+                    <input type="text" name="firstname" id="ifirstname" style="margin-bottom: 8px;" required>
+                    
+                    <label for="ilastname">Enter Your Last Name:</label>
+                    <input type="text" name="lastname" id="ilastname" style="margin-bottom: 8px;" required>
+                    
+                    <label for="iemail">Enter Your Email:</label>
+                    <input type="email" name="email" id="iemail" style="margin-bottom: 8px;" required>
+
+                    <label for="ipassword">Create a New Passoword:</label>
+                    <input type="password" name="password" id="ipassword" required minlength="8">
+                </div>
+
+                <hr>
+
+                <div class="account-type">
+                    
+                    <p style="margin-bottom: 30px;">Account type (required)</p>
+                    <label><input type="radio" name="account-type-radio" id="ipersonal" checked>
+                        &nbsp;Personal</label>
+                    <label><input type="radio" name="account-type-radio" id="ibusiness">
+                        &nbsp;Business</label>
+                </div>
+
+                <hr>
+
+                <div class="aditional-informations">
+                    <label for="ifile">Upload a profile picture:</label>
+                    <input type="file" name="file" id="ifile" style="margin-bottom: 8px;">
+                    <label for="iage">Input your age (years):</label>
+                    <input type="number" name="age" id="iage" style="margin-bottom: 8px;" required min="0">
+                    <label for="ihear-about-fcc">How did you hear about us?</label>
+                    <select name="hear-about-fcc" id="ihear-about-fcc" style="margin-bottom: 8px;">
+                        <option>(select one)</option>
+                        <option>freeCodeCamp News</option>
+                        <option>freeCodeCamp YouTube Channel</option>
+                        <option>freeCodeCamp Forum</option>
+                        <option>Other</option>
+                    </select>
+                    <label for="iprovide-bio">Provide a bio:</label>
+                    <textarea name="provide-bio" id="iprovide-bio" placeholder="I like coding on the beach..."></textarea>
+                </div>
+
+
+                <div class="terms">
+                    <input type="checkbox" name="accept-terms" id="iaccept-terms" required>
+                    &nbsp;I accept the <a href="#">terms and conditions</a>
+                </div>
+
+
+                <div class="submit">
+                    <button>Submit</button>
+                </div>
+            </form>
+        </section>
+    </main>
+</body>
+</html>

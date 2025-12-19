@@ -1,0 +1,147 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+:root {
+    --textnormal: rgba(39, 39, 39, 0.9); 
+}
+
+body {
+    background-color: aquamarine;
+}
+
+main {
+    margin: 30px auto;
+    padding: 10px;
+    width: 350px;
+    background-color: white;
+    border: 2px solid black;
+}
+
+/* ------------------------------------------------- */
+header h1 {
+    text-align: center;
+    font-size: 2.7rem;
+    font-weight: bold;
+}
+header p {
+    color: var(--textnormal);
+    margin-top: 5px;
+}
+
+/* --------------------------------------------------- */
+.serving-size {
+    font-weight: bold;
+    margin-top: 5px;
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+}
+
+.serving-size .top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.serving-size > .top h2 {
+    font-size: 1.1rem;
+}
+
+.serving-size > .line1 {
+    background-color: black;
+    height: 13px;
+}
+
+.serving-size > .bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+.serving-size > .bottom > h2 {
+    font-size: 2.3rem;
+}
+.serving-size > .bottom > p {
+    font-size: 2.6rem;
+}
+
+.serving-size > .line2 {
+    background-color: black;
+    height: 7px;
+}
+.serving-size > .last-paragraph {
+    font-weight: 900;
+    text-align: end;
+}
+
+/* --------------------------------------------- */
+.calculus {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+}
+.calculus p {
+    color: var(--textnormal);
+    font-style: italic;
+}
+.bold {
+    font-weight: 900;
+}
+
+.calculus > .topic {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.calculus > .topic > .title {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.topic-secondary {
+    display: flex;
+    justify-content: space-between;
+}
+.topic-secondary > .left {
+    margin-left: 25px;
+}
+.topic-third {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.topic-third > .left {
+    margin-left: 50px;
+}
+.final-line {
+    background-color: black;
+    height: 13px;
+}
+
+/* ---------------------------------------------- */
+.additional-informations {
+    margin: 8px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.additional-informations .line-information {
+    display: flex;
+    justify-content: space-between;
+}
+.line-finally {
+    background-color: black;
+    height: 7px;
+}
+
+/* ----------------------------------------------- */
+footer {
+    margin-top: 7px;
+}
+footer > p {
+    font-size: 0.836rem;
+    color: var(--textnormal);
+}

@@ -1,0 +1,221 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: lightblue;
+}
+
+main {
+    position: relative;
+    margin: 150px auto;
+    width: 350px;
+    height: 300px;
+}
+
+.face {
+    position: absolute;
+    inset: 50% 50%;
+    transform: translate(-50%, -50%);
+    width: 75%;
+    height: 75%;
+    background-image: linear-gradient(to bottom, rgb(97, 97, 97) 0 85%, rgb(66, 66, 66));
+
+    border: 1px solid black;
+    border-radius: 45%;
+}
+
+.right-eye {
+    position: absolute;
+    transform: rotate(125deg);
+    top: 70px;
+    left: 50px;
+    background-color: black;
+    width: 47px;
+    height: 35px;
+    border-radius: 60%;
+}
+
+.left-eye {
+    position: absolute;
+    transform: rotate(55deg);
+    top: 70px;
+    right: 50px;
+    background-color: black;
+    width: 47px;
+    height: 35px;
+    border-radius: 60%;
+}
+.pupil-right-eye {
+    position: absolute;
+    top: 20px;
+    right: 12px;
+    background-color: white;
+    width: 24px;
+    height: 12px;
+    border-radius: 60%;
+}
+
+.pupil-left-eye {
+    position: absolute;
+    bottom: 20px;
+    right: 12px;
+    background-color: white;
+    width: 24px;
+    height: 12px;
+    border-radius: 60%;
+}
+
+.nose {
+    z-index: 10;
+    position: absolute;
+    inset: 58% 38%;
+    transform: rotate(-35deg);
+    width: 60px;
+    height:60px;
+    background: conic-gradient(
+        #442C2C 0deg 70deg,
+        rgb(97, 97, 97) 70deg 180deg
+    );
+    border-radius: 50%;
+}
+
+.left-ear {
+    position: absolute;
+    top: -10px;
+    left: -10px;
+    width: 85px;
+    height: 85px;
+    background-color: rgb(97, 97, 97);
+    clip-path: polygon(
+        5% 0, 100% 20%, 20% 100%,
+        0 15%
+    );
+}
+.left-ear-inside {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: 50px;
+    height: 50px;
+    background-color: #3B3B4F;
+    clip-path: polygon(
+        3% 0, 100% 25%, 99% 34%,
+        35% 99%, 25% 100%, 0 13%
+    );
+}
+
+.right-ear {
+    position: absolute;
+    transform: scalex(-1);
+    top: -10px;
+    left: 185px;
+    width: 85px;
+    height: 85px;
+    background-color: rgb(97, 97, 97);
+    clip-path: polygon(
+        5% 0, 100% 20%, 20% 100%,
+        0 15%
+    );
+}
+
+.right-ear-inside {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: 50px;
+    height: 50px;
+    background-color: #3B3B4F;
+    clip-path: polygon(
+        3% 0, 100% 25%, 99% 34%,
+        35% 99%, 25% 100%, 0 13%
+    );
+}
+
+.mouth-left {
+    z-index: 15;
+    position: absolute;
+    top: 130px; left: 110px;
+    width: 20px;
+    height: 40px;
+    background-color: rgb(97, 97, 97);
+    border: 2px solid black;
+    border-radius: 15px 15px 10px 20px;
+    clip-path: polygon(
+        0 70%, 100% 70%, 100% 100%, 0 100%
+    );
+}
+.mouth-right {
+    z-index: 15;
+    position: absolute;
+    top: 130px; left: 128px;
+    width: 20px;
+    height: 40px;
+    background-color: rgb(97, 97, 97);
+    border: 2px solid black;
+    border-radius: 15px 15px 10px 20px;
+    clip-path: polygon(
+        0 70%, 100% 70%, 100% 100%, 0 100%
+    );
+}
+
+.linetl {
+    z-index: 20;
+    position: absolute;
+    top: 165px;
+    left: 60px;
+    background-color: black;
+    width: 55px;
+    height: 1px;
+}
+.lineml {
+    z-index: 20;
+    position: absolute;
+    transform: rotate(5deg);
+    top: 155px;
+    left: 60px;
+    background-color: black;
+    width: 55px;
+    height: 1px;
+}
+.linebl {
+    z-index: 20;
+    position: absolute;
+    transform: rotate(10deg);
+    top: 145px;
+    left: 60px;
+    background-color: black;
+    width: 55px;
+    height: 1px;
+}
+.linetr {
+    z-index: 20;
+    position: absolute;
+    top: 165px;
+    right: 60px;
+    background-color: black;
+    width: 55px;
+    height: 1px;
+}
+.linemr {
+    z-index: 20;
+    position: absolute;
+    transform: rotate(175deg);
+    top: 155px;
+    right: 60px;
+    background-color: black;
+    width: 55px;
+    height: 1px;
+}
+.linebr {
+    z-index: 20;
+    position: absolute;
+    transform: rotate(170deg);
+    top: 145px;
+    right: 60px;
+    background-color: black;
+    width: 55px;
+    height: 1px;
+}
